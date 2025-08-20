@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Formulario</title>
+    <script>
+        function validar(){
+            let nombre=document.getElementById("nombre").value;
+            if(nombre==""){
+                alert("El nombre es obligatorio, ingreselo por favor");
+                return false;
+            }
+            return true;
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form onsubmit="return validar()">
+        <label>Eombre: </label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label>Edad: </label>
+        <input type="number" id="edad" name="edad"><br>
+        <button type="submit">Registrarse</button>
+    </form>
+    
+</body>
+</html>
