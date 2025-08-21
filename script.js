@@ -9,6 +9,6 @@ function validarFormulario(){
         return true;
 }
 function mostrarImagen(event){
-    let imagen=document.getElementById('ver-imagen');
-    imagen.src=URL.createObjectURL(event.target.file[0]);
+    let imagen = document.getElementById('ver-imagen');
+    imagen.src = URL.createObjectURL(event.target.files[0]); // ✅ corregido
 }
