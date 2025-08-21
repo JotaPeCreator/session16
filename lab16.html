@@ -18,7 +18,7 @@
         </nav>
     </header>
     <h1>Registro de Usuarios</h1>
-    <form class="formulario">
+    <form class="formulario" onsubmit="return validarFormulario()">
         <label>Nombre: </label>
         <input type="text" id="nombre" name="nombre">
         <label>Correo Electronico: </label>
@@ -26,7 +26,7 @@
         <label>Password: </label>
         <input type="password" id="password" name="password">
         <label>Imagen de Perfil</label>
-        <input type="file" id="imagen" name="imagen" accept="imagen" onchange="mostrarImagen">
+        <input type="file" id="imagen" name="imagen" accept="imagen" onchange="mostrarImagen()">
         <img id="ver-imagen" class="ver-imagen">
         <button type="submit">Registrar</button>
         
