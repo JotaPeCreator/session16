@@ -5,9 +5,8 @@ function validarFormulario(){
     if(nombre=="" || email=="" || imagen=="" ){
         alert("Todos los cambios son obligatorios");
         return false;
-    }else{
-        return true;
     }
+        return true;
 }
 function mostrarImagen(event){
     let imagen=document.getElementById('ver-imagen');
